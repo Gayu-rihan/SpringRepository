@@ -3,8 +3,18 @@ package com.iprimed.serivces;
 public class CricketCoach implements ICoach {
 	
 //	Constructor dependencies injection
-	public IFortuneService fortuneService;
-	public CricketCoach(IFortuneService fortuneService) {
+//	public IFortuneService fortuneService;
+//	public CricketCoach(IFortuneService fortuneService) {
+//		this.fortuneService = fortuneService;
+//	}
+
+	private IFortuneService fortuneService;
+	
+	public IFortuneService getFortuneService() {
+		return fortuneService;
+	}
+
+	public void setFortuneService(IFortuneService fortuneService) {
 		this.fortuneService = fortuneService;
 	}
 

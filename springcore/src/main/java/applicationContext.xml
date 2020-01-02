@@ -10,7 +10,7 @@
     <bean 
     	id="cricketCoach"    
     	class="com.iprimed.serivces.CricketCoach">
-    	<constructor-arg ref="fortuneService" />    
+    	<property name="fortuneService" ref="fortuneService" ></property>  
     </bean>
     
     <bean 
