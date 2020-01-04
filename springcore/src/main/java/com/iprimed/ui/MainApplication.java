@@ -14,6 +14,7 @@ public class MainApplication {
 		
 		System.out.println(coach.getDailyWorkout());
 		System.out.println(fortune.getFortune());
+		System.out.println(coach.getData());
 		context.close();
 
 	}

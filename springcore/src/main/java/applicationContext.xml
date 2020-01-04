@@ -9,13 +9,16 @@
      
     <bean 
     	id="cricketCoach"    
-    	class="com.iprimed.serivces.CricketCoach">
-    	<property name="fortuneService" ref="fortuneService" ></property>  
+    	class="com.iprimed.serivces.CricketCoach"
+    	scope = "singleton">
+    	<property name="fortuneService" ref="fortuneService" ></property> 
     </bean>
     
     <bean 
     	id="fortuneService"    
-    	class="com.iprimed.serivces.FortuneServiceImpl">    
+    	class="com.iprimed.serivces.FortuneServiceImpl"
+    	scope = "prototype"> 
+    	   
     </bean>
   
      
